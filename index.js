@@ -1,3 +1,15 @@
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 4000;
+
+app.get("/", (req, res) => {
+  res.send("Bot is running!");
+});
+
+app.listen(port, "0.0.0.0", () => {
+  console.log(`HTTP server listening on port ${port}`);
+});
+
 require("dotenv").config();
 const fs = require("node:fs");
 const fetch = require("node-fetch");
