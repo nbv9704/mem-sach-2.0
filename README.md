@@ -63,10 +63,10 @@ npm start
 
 ### Một số lệnh cơ bản
 
-- `/newoffer` (ADMIN) Create offer.
-- `/bet` Bet on an offer.
-- `/lock` (ADMIN) Lock the offer when event starts.
-- `/announce` (ADMIN) Announce event winner.
+- `/newoffer` (ADMIN) Tạo kèo.
+- `/bet` Cược trên một kèo.
+- `/lock` (ADMIN) Khóa kèo khi bắt đầu trận.
+- `/announce` (ADMIN) Thông báo kết quả.
 
 ## Tác giả
 
