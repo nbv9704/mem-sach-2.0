@@ -71,6 +71,7 @@ npm start
 ## Tác giả
 
 👤 **Jakub Juszko** ( Check him out )
+
 👤 **Tôi** ( Thằng dịch ra tiếng Việt cho các bạn )
 
 - Bài gốc: https://github.com/jakjus/ocean-bet
