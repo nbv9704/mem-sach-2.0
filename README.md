@@ -74,6 +74,6 @@ npm start
 
 ## Nếu mà bạn thấy hay thì
 
-Cho tôi và tác giả 1 ⭐️ nha :3
+Cho tôi 1 ⭐️ nha :3
 
 ---
