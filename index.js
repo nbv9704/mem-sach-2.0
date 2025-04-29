@@ -3,11 +3,11 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.get("/", (req, res) => {
-  res.send("Bot is running!");
+  res.send("Bot đang chạy!");
 });
 
 app.listen(port, "0.0.0.0", () => {
-  console.log(`HTTP server listening on port ${port}`);
+  console.log(`Máy chủ HTTP đang chạy ở cổng ${port}`);
 });
 
 require("dotenv").config();
