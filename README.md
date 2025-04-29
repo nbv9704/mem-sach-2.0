@@ -70,33 +70,10 @@ npm start
 
 ## Tác giả
 
-👤 **Jakub Juszko** ( Check him out )
-
-👤 **Tôi** ( Thằng dịch ra tiếng Việt cho các bạn )
-
-- Bài gốc: https://github.com/jakjus/ocean-bet
-- Website: https://jakjus.com
-- Github: [@jakjus](https://github.com/jakjus)
-- LinkedIn: [@jakubjuszko](https://linkedin.com/in/jakubjuszko)
-
-## 🤝 Ý kiến đóng góp
-
-jakjus:
-`This package is not published on NPM, because the script is self-contained and I do not expect anyone to
-plug it into a bigger script.`
-
-Dịch thì nôm na ra là anh ấy thấy project này có code hoạt động khá riêng lẻ và anh ấy cũng không nghĩ ai có thể
-nhét vào một dữ liệu lớn hơn ( chắc ý là con bot to hơn ).
-
-Những đóng góp, báo lỗi và yêu cầu tính năng đều được chào đón!<br />Cứ check [issues page](https://github.com/jakjus/ocean-bet/issues) tự nhiên nhé.
+👤 **Tôi**
 
 ## Nếu mà bạn thấy hay thì
 
 Cho tôi và tác giả 1 ⭐️ nha :3
-
-## 📝 Giấy phép
-
-Copyright © 2024 [Jakub Juszko](https://github.com/jakjus).<br />
-This project is [MIT](https://github.com/jakjus/ocean-bet/blob/master/LICENSE) licensed.
 
 ---
