@@ -24,29 +24,31 @@ const rest = new REST({ version: "10" }).setToken(token);
 // and deploy your commands!
 (async () => {
   try {
-    console.log(
-      `Bắt đầu load lại ${commands.length} lệnh.`,
-    );
+    console.log(`Bắt đầu load lại ${commands.length} lệnh.`);
 
-    // The put method is used to fully refresh all commands in the guild with the current set
+    // Xóa tất cả lệnh cũ trước khi đăng ký lại
+    console.log("Xóa các lệnh cũ (global)...");
+    await rest.put(Routes.applicationCommands(clientId), { body: [] });
+
+    if (guildId) {
+      console.log("Xóa các lệnh cũ (local)...");
+      await rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: [] });
+    }
+
+    // Đăng ký lệnh mới
     if (guildId) {
       const data = await rest.put(
         Routes.applicationGuildCommands(clientId, guildId),
         { body: commands },
       );
-      console.log(
-        `LOCAL: Đã load xong ${data.length} lệnh.`,
-      );
+      console.log(`LOCAL: Đã load xong ${data.length} lệnh.`);
     } else {
       const data = await rest.put(Routes.applicationCommands(clientId), {
         body: commands,
       });
-      console.log(
-        `GLOBAL: Đã load xong ${data.length} lệnh.`,
-      );
+      console.log(`GLOBAL: Đã load xong ${data.length} lệnh.`);
     }
   } catch (error) {
-    // And of course, make sure you catch and log any errors!
     console.error(error);
   }
 })();
