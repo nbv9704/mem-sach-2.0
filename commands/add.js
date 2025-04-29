@@ -4,7 +4,7 @@ const { db } = require("../db");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("add")
-    .setDescription("[PREMIUM] Bơm 💵 cho con nghiện")
+    .setDescription("[PREMIUM] Bơmm 💵 cho con nghiện")
     .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers)
     //.addUserOption((option) =>
     //  option.setName("user").setDescription("User to add 💵 to").setRequired(true),
