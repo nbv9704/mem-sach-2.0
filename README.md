@@ -1,24 +1,24 @@
-<h1 align="center">Ocean Bet - Betting Discord Bot</h1>
+<h1 align="center">Mem Sách 2.0 - Bot Cá Độ Trên Discord</h1>
 <p>
   <a href="https://github.com/jakjus/ocean-bet/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/jakjus/ocean-bet" />
   </a>
 </p>
 
-> Betting (Bookmaker) Discord Bot. Set your own events and odds. Lock in offer and announce event winner.
+> Tự tạo kèo, xong rồi cược, thông báo kết quả rồi ăn tiền.
 
-### 🚀 [Discord](https://discord.gg/NYUhKBz6ZB)
+### 🚀 [Discord](https://discord.gg/BYKJmqCH4R)
 
-## Prerequisites
+## Yêu cầu
 
 - NPM
 - NodeJS
 
-## Install
+## Cài đặt
 
 ```sh
-git clone git@github.com:jakjus/ocean-bet.git
-cd ocean-bet/
+git clone git@github.com:ngobaoviet97/mem-sach-2.0
+cd mem-sach-2.0/
 npm install
 ```
 
@@ -26,68 +26,74 @@ npm install
 
 ### Discord App
 
-Register app in [Discord Develepers Portal](https://discord.com/developers/applications). Required privileges integer is: `2147485696`. Insert your client_id in URL below.
+Đăng ký app trên [Discord Develepers Portal](https://discord.com/developers/applications). Mã đặc quyền bắt buộc là: `2147485696`. Thêm client_id của bạn vào link dưới.
 
 ```
 https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=2147485696&scope=bot%20applications.commands
 ```
 
-Go to [Discord Develepers Portal](https://discord.com/developers/applications) --> Your App --> Installation --> Install Link --> Paste the URL --> Save. You will use this URL to Invite your bot.
+Vào [Discord Develepers Portal](https://discord.com/developers/applications) --> Your App --> Installation --> Install Link --> Paste the URL --> Save. Bạn sẽ thấy link URL của bot.
 
-Go to [Discord Develepers Portal](https://discord.com/developers/applications) --> Your App --> Bot --> copy TOKEN. You will use this TOKEN in `.env`. _(Bot TOKEN is different than OAuth TOKEN!)_
+Vào [Discord Develepers Portal](https://discord.com/developers/applications) --> Your App --> Bot --> copy TOKEN. Bạn sẽ dùng TOKEN này cho `.env`. _(Bot TOKEN khác với OAuth TOKEN!)_
 
-### Edit config files
+### Chỉnh sửa file config
 
-Rename `.env.example` with `.env`. Fill it with your own application's TOKEN and Client ID. `TOPGG_AUTH` is optional.
+Đổi tên `.env.example` thành `.env`. Điền TOKEN và CLIENT_ID của bạn vào file. `TOPGG_AUTH` không bắt buộc nếu bạn không có ý định dùng Top.gg.
 
-### Register slash commands
+### Đăng ký lệnh
 
 ```sh
 node register.js
 ```
 
-It can take up to 10 minutes to propagate on all bots existing instances.
+Có thể mất tới 10 phút để có thể load hết thao tác hiện tại của bot.
 
-If you wish to register commands for testing on one Discord Server
-(Guild), use:
+Nếu bạn muốn đăng ký lệnh để test trên một server Discord
+(Guild), thì dùng:
 
 ```sh
 GUILD_ID=your_guild_id node register.js
 ```
 
-### Run bot
+### Chạy bot
 
 ```sh
 npm start
 ```
 
-### How to use
+### Một số lệnh cơ bản
 
 - `/newoffer` (ADMIN) Create offer.
 - `/bet` Bet on an offer.
 - `/lock` (ADMIN) Lock the offer when event starts.
 - `/announce` (ADMIN) Announce event winner.
 
-## Author
+## Tác giả
 
-👤 **Jakub Juszko**
+👤 **Jakub Juszko** ( Check him out )
+👤 **Tôi** ( Thằng dịch ra tiếng Việt cho các bạn )
 
+- Bài gốc: https://github.com/jakjus/ocean-bet
 - Website: https://jakjus.com
 - Github: [@jakjus](https://github.com/jakjus)
 - LinkedIn: [@jakubjuszko](https://linkedin.com/in/jakubjuszko)
 
-## 🤝 Contributing
+## 🤝 Ý kiến đóng góp
 
-This package is not published on NPM, because the script is self-contained and I do not expect anyone to
-plug it into a bigger script.
+jakjus:
+`This package is not published on NPM, because the script is self-contained and I do not expect anyone to
+plug it into a bigger script.`
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jakjus/ocean-bet/issues).
+Dịch thì nôm na ra là anh ấy thấy project này có code hoạt động khá riêng lẻ và anh ấy cũng không nghĩ ai có thể
+nhét vào một dữ liệu lớn hơn ( chắc ý là con bot to hơn ).
 
-## Show your support
+Những đóng góp, báo lỗi và yêu cầu tính năng đều được chào đón!<br />Cứ check [issues page](https://github.com/jakjus/ocean-bet/issues) tự nhiên nhé.
 
-Give a ⭐️ if this project helped you!
+## Nếu mà bạn thấy hay thì
 
-## 📝 License
+Cho tôi và tác giả 1 ⭐️ nha :3
+
+## 📝 Giấy phép
 
 Copyright © 2024 [Jakub Juszko](https://github.com/jakjus).<br />
 This project is [MIT](https://github.com/jakjus/ocean-bet/blob/master/LICENSE) licensed.
