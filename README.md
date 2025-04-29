@@ -1,7 +1,7 @@
 <h1 align="center">Mem Sách 2.0 - Bot Cá Độ Trên Discord</h1>
 <p>
-  <a href="https://github.com/jakjus/ocean-bet/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/jakjus/ocean-bet" />
+  <a href="https://github.com/ngobaoviet97/mem-sach-2.0/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/ngobaoviet97/mem-sach-2.0" />
   </a>
 </p>
 
